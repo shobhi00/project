@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1MDM Web Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Topbar */
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f5f5f5;
+            font-size: 0.9rem;
+        }
+
+        .topbar-links a {
+            color: #e41f1f;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .topbar-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #e41f1f;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f8f8f8;
+        }
+
+        .hero-section img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .hero-section h1 {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        .hero-section p {
+            color: #666;
+        }
+
+        /* Company Story */
+        .company-section {
+            display: flex;
+            padding: 50px 20px;
+            background-color: #fff;
+            gap: 40px;
+        }
+
+        .company-section img {
+            flex: 1;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .company-content {
+            flex: 2;
+        }
+
+        .company-content h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .company-content p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        /* Pricing Table */
+        .pricing-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .pricing-section h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .pricing-section p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+            background: #fff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background: #e41f1f;
+            color: #fff;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        button {
+            padding: 10px 20px;
+            color: #fff;
+            background: #e41f1f;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #b71c1c;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: #e41f1f;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .cta-section button {
+            background: #fff;
+            color: #e41f1f;
+            font-weight: 600;
+            margin: 10px;
+        }
+
+        .cta-section button:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Topbar -->
+    <header class="topbar">
+        <div class="topbar-text">World's Largest Medical Equipment Market Place</div>
+        <div class="topbar-links">
+            <a href="myacc.html">My account</a> | <a href="#">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="1.png" alt="1MDM Logo">
+        </div>
+        <ul>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="ourstory.html">Our Story</a></li>
+            <li><a href="index.html">Sell on 1MDM</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mission Section -->
+    <section class="hero-section">
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201804/medical-lab-technician-647.jpeg?size=690:388" alt="Mission Image">
+        <h1>Our mission is to make life saving devices accessible & affordable worldwide.</h1>
+        <p>Deep dive into the engineering & technology behind life saving medical devices from 1MDM.</p>
+    </section>
+
+    <!-- Company Story Section -->
+    <section class="company-section">
+        <img src="https://st.depositphotos.com/1194063/1938/i/450/depositphotos_19385107-stock-photo-working-at-the-laboratory.jpg" alt="Company Story">
+        <div class="company-content">
+            <h2>Building access to crucial life saving devices</h2>
+            <p>1MDM began as a concept idea in 2019 as a platform for access to medical devices & machines.</p>
+            <p>However, something unexpected struck in 2020 with a global pandemic, and the focus shifted to building projects that could help people worldwide.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <h1>Reach millions of B2B buyers globally</h1>
+        <p>Choose an 1mdm.com seller plan to launch your new business growth</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Standard<br><span>$3,499/year</span></th>
+                    <th>Standard Extended<br><span>$5,299/year</span></th>
+                    <th>Premium<br><span>$6,999/year</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Unlimited</td><td>Unlimited</td><td>Unlimited</td></tr>
+                <tr><td>20 inquiries</td><td>30 inquiries</td><td>50 inquiries</td></tr>
+                <tr><td>Dedicated support</td><td>Dedicated support</td><td>NYC Key Account Manager</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Ready to Grow Your Business?</h2>
+        <button>Start Selling</button>
+        <button>Chat with Consultant</button>
+    </section>
+</body>
+</html>

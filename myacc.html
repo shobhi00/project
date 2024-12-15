@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register - 1MDM</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            border-bottom: 1px solid #eaeaea;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            color: #e41f1f;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-container input {
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        .search-container button {
+            background-color: #e41f1f;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+            background-color: #fff;
+            border: 1px solid #eaeaea;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .new-customer, .returning-customer {
+            width: 45%;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        button, a.button {
+            display: inline-block;
+            background-color: #e41f1f;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover, a.button:hover {
+            background-color: #c51919;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background-color: #f8f8f8;
+            border: 1px solid #eaeaea;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 10px;
+        }
+
+        .sidebar a:hover, .sidebar a.active {
+            background-color: #e41f1f;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="https://via.placeholder.com/100x40?text=1MDM" alt="1MDM Logo">
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search 10000+ products">
+            <button>Search</button>
+        </div>
+        <nav>
+            <a href="myacc.html">My account</a>
+            <a href="index.html">Sell for Free</a>
+            <a href="index.html">Sell on 1MDM</a>
+            <a href="index.html">Seller Central</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- New Customer Section -->
+        <div class="new-customer">
+            <h2>New Customer</h2>
+            <p>By creating an account, you will be able to shop faster, keep track of orders, and stay updated on order statuses.</p>
+            <a href="#" class="button">Continue</a>
+        </div>
+
+        <!-- Returning Customer Section -->
+        <div class="returning-customer">
+            <h2>Returning Customer</h2>
+            <form>
+                <label for="email">E-Mail Address</label>
+                <input type="email" id="email" placeholder="E-Mail Address">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password">
+
+                <a href="#" style="font-size: 12px; color: #e41f1f; text-decoration: none;">Forgotten Password</a>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" style="margin: 0 auto; width: 1200px; display: flex;">
+        <ul>
+            <li><a href="#" class="active">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Forgotten Password</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Address Book</a></li>
+            <li><a href="#">Wish List</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Recurring Payments</a></li>
+            <li><a href="#">Reward Points</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Transactions</a></li>
+            <li><a href="#">Newsletter</a></li>
+        </ul>
+    </div>
+</body>
+</html>
